@@ -1,0 +1,95 @@
+# 01_add_many_number.md
+def addingnum(numbers) -> int:
+  sum:int=0
+  for number in numbers:
+   sum +=number
+  return sum
+def main():
+   numbers: int[list]=[1,2,3,4,5]
+   sum_num:int=addingnum(numbers)
+   print("sum of numbers:",sum_num)
+if __name__=="__main__":
+  main()
+# double 
+def main():
+  list_of_num:list[int]=[1,6,7,4]
+  for i in range(len(list_of_num)):
+    list_of_num[i]=list_of_num[i]*2
+    print(list_of_num[i], end=" ")
+if __name__=="__main__":
+   main()
+# flowing with data
+def add_list(my_list,message):
+  for i in range(3):
+     my_list.append(message)
+
+def main():
+ message=input("enter a message to copy")
+ my_list=[]
+ print("list before:",my_list)
+ add_list(my_list,message)
+ print("list after:",my_list)
+
+if __name__=="__main__":
+   main()
+# get first element
+def get_element(list):
+  print("first element=",list[0])
+
+n:int=int(input("enter how many elements you want to enter"))
+user_list=[]
+for _ in range(n):
+    element = input("Enter an element: ")
+    user_list.append(element)
+    print("list before:",user_list)
+    get_element(user_list)
+
+
+# get last element
+def get_last_element(lst):
+    print("Last element:", lst[-1])
+
+n:int=int(input("enter how many elements you want to enter"))
+user_list=[]
+for _ in range(n):
+    element = input("Enter an element: ")
+    user_list.append(element)
+    print("list before:",user_list)
+    get_last_element(user_list)
+
+# get list
+def main():
+    lst = []
+
+    val = input("Enter a value: ")
+
+    while val:
+        lst.append(val)
+        val = input("Enter a value: ")
+    print("Here's the list:", lst)
+
+if __name__ == '__main__':
+    main()
+    # short length
+max_len:int=3
+def shortlen(lst) :
+  if len(lst) > max_len:
+    while len(lst)>max_len:
+      element=lst.pop()
+      print(element)
+  else:
+        pass
+def main():
+
+  lst = []
+  val = input("Enter a value (or press Enter to stop): ")
+  while val:
+    lst.append(val)
+    val = input("Enter a value (or press Enter to stop): ")
+
+  print("Original list:", lst)
+  shortlen(lst)
+  print("Shortened list:", lst)
+
+if __name__ == '__main__':
+    main()
