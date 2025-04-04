@@ -1,0 +1,92 @@
+# 01_dicesimulator.md
+from re import A
+Rolling_dice
+import random
+
+NUM_SIDES = 6
+
+def roll_dice():
+
+    die1: int = random.randint(1, NUM_SIDES)
+    die2: int = random.randint(1, NUM_SIDES)
+    total: int = die1 + die2
+    print("Total of two dice:", total)
+
+def main():
+    die1: int = 10
+    print("die1 in main() starts as:", die1)
+    roll_dice()
+    roll_dice()
+    roll_dice()
+    print("die1 in main() is:", die1)
+if __name__ == '__main__':
+    main()
+# 02_e=mc2.md
+Enerygy
+def main():
+  c:int=299792458
+  mass_in_kg:float=float(input(print("enter the value of mass to calculate the enery in joules")))
+  print("e = m * C^2...")
+  print("m = " + str(mass_in_kg) + " kg")
+  print("C = " + str(c) + " m/s")
+  energy_in_joules:float=mass_in_kg*c**2
+  print(f"{energy_in_joules}")
+if __name__ == '__main__':
+     main()
+    #  03_feet_to_inches.md
+foots to inches
+foot_into_inches: int = 12
+def main():
+    feet: float = float(input("Enter number of feet: "))
+    inches: float = feet * foot_into_inches
+    print("That is", inches, "inches!")
+if __name__ == '__main__':
+    main()
+
+  # pythagorean theorem
+import math
+def main():
+    ab: float = float(input("Enter the length of Base AB: "))
+    ac: float = float(input("Enter the length of Perpendicular AC: "))
+    bc: float = math.sqrt(ab**2 + ac**2)
+    print("The length of BC (the hypotenuse) is: " + str(bc))
+if __name__ == '__main__':
+     main()
+
+    # remainder and division
+def main():
+    dividend: int = int(input("Please enter an integer to be dividend: "))
+    divisor: int = int(input("Please enter an integer to divide by: "))
+    quotient: int = dividend//divisor
+    remainder: int = dividend % divisor
+    print("The result of this division is " + str(quotient) + " with a remainder of " + str(remainder))
+if __name__ == '__main__':
+    main()
+    # second in a year
+def main():
+    days_in_year: int = 365
+    hours_in_day: int = 24
+    minutes_in_hour: int = 60
+    seconds_in_hour: int = 60
+    seconds: int = days_in_year * hours_in_day * minutes_in_hour * seconds_in_hour
+
+    print(f"The seconds in the year is = {seconds}")
+
+if __name__ == '__main__':
+    main()
+
+
+# 07_tiny_mad_lib.md
+SENTENCE_START: str = "Panaversity is fun. I learned to program and used Python to make my "
+
+def main():
+    adjective: str = input("Write any adjective and press enter: ")
+    noun: str = input("Write any noun and press enter: ")
+    verb: str = input("Write a verb and press enter: ")
+
+    print(SENTENCE_START + adjective + " " + noun + " " + verb + "!")
+
+if __name__ == '__main__':
+    main()
+
+
