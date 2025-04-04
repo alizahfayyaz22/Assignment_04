@@ -1,0 +1,45 @@
+# Assignment:00 program1
+def main():
+    num1 = int(input("Enter the first number: "))
+    num2 = int(input("Enter the second number: "))
+    total = num1 + num2
+    print(f"The sum of {num1} and {num2} is: {total}")
+if __name__ == '__main__':
+    main()
+# Assignment:00 program2
+degrees_fahrenheit = float(input("Enter temperature in Fahrenheit: "))
+degrees_celsius = (degrees_fahrenheit - 32) * 5.0 / 9.0
+print(f"Temperature: {degrees_fahrenheit}F = {degrees_celsius}C")
+# Assignment:00 program3
+Anton:int = 21
+Beth:int = Anton + 6
+Chen : int= Beth + 20
+Drew :int = Chen + Anton
+Ethan :int = Chen
+print(f"Anton is {Anton}")
+print(f"Beth is {Beth}")
+print(f"Chen is {Chen}")
+print(f"Drew is {Drew}")
+print(f"Ethan is {Ethan}")
+# Assignment:00 progra4
+def main():
+    fav_animal=print(input("what is your favourite animal :"))
+    print("my favourite animal is also { fav_animal} ")
+if __name__ == '__main__':
+    main()
+# Assignment:00 program5
+def main():
+    side1: float = float(input("What is the length of side 1? "))
+    side2: float = float(input("What is the length of side 2? "))
+    side3: float = float(input("What is the length of side 3? "))
+    result:float=(side1 + side2 + side3)
+    print(f"The perimeter of the triangle is {result}")
+if __name__ == '__main__':
+    main()
+# Assignment:00 program6
+def main():
+      num:int=int (input("enter the number to get the square of "))
+      result=num * num
+      print(f"the square of {num} is {result}")
+if __name__ == '__main__':
+    main()
