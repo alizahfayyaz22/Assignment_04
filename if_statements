@@ -1,0 +1,51 @@
+# Write a program that prints the first 20 even numbers. There are several correct approaches, but they all use a loop of some sort. Do no write twenty print statements
+def main():
+  for i in range(20):
+    print(i*2)
+if __name__ == '__main__':
+    main()
+
+# voting system
+def main():
+    age = int(input("Enter your age: "))
+    if age == 16:
+        print("You can vote in Peturksbouipo but not in Stanlau because the voting age there is 25, and you cannot vote in Mayengua because their voting age is 48.")
+    if age == 25:
+        print("You can vote in Stanlau.")
+    if age == 48:
+        print("You can vote in Mayengua.")
+    if age != 16 and age != 25 and age != 48:
+        print("You are not eligible to vote in any of these countries.")
+if __name__ == '__main__':
+      main()
+
+# Write a program which asks the user how tall they are and prints whether or not they're taller than a pre-specified minimum height.
+
+min_height:int=50
+def main():
+  height=float(input("enter your height"))
+  if height >=min_height:
+    print("your height is valid")
+  else:
+    print("your height is not valid")
+if __name__ == '__main__':
+      main()
+# Print 10 random numbers in the range 1 to 100.
+import random
+def main():
+  i:int
+  for i in range(10):
+    print(random.randint(1,100),end="   ")
+if __name__ == '__main__':
+  main()
+
+  # leap year
+def main():
+  year=int(input("enter the year "))
+  if year % 4==0:
+    print("it is a leap year")
+  else:
+      print("it is not a leap year")
+if __name__ == '__main__':
+  main()
+
