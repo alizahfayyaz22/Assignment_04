@@ -1,0 +1,72 @@
+# guessing game
+import random
+def main():
+    secret_num = random.randint(0, 99)
+    print("I am thinking of a number between 0 and 99")
+
+    while secret_num:
+        guess = int(input("Enter a guess: "))
+        if guess > secret_num:
+            print("Your guess is too high")
+        elif guess < secret_num:
+            print("Your guess is too low")
+        else:
+            print("Congrats! The number was:", secret_num)
+            break
+if __name__ == '__main__':
+    main()
+
+# 20 even numbers
+def main():
+  for i in range(20):
+    i=i*2
+    print(i)
+if __name__ == '__main__':
+    main()
+
+# affirmation
+affirmation : str = "I am capable of doing anything I put my mind to."
+
+def main():
+    print("Please type the following affirmation: " + affirmation)
+
+    user_feed = input()
+    while user_feed != affirmation:
+
+        print("That was not the affirmation.")
+
+
+        print("Please type the following affirmation: " + affirmation)
+        user_feed = input()
+    print("That's right! :)")
+if __name__ == '__main__':
+    main()
+# doubling the number
+def main():
+  num=int(input("Enter a number: "))
+ 
+  print(num)
+  while num > 100:
+   num=num*2
+  print(num)
+def main():
+    num = int(input("Enter a number: "))
+    while num < 100:
+        num = num * 2
+        print("Doubled:", num)
+    print("We are stopping here because the number is now", num, "which is 100 or more.")
+if __name__ == '__main__':
+    main()
+    # fabinocci series
+MAX_TERM_VALUE : int = 10000
+
+def main():
+    curr_term = 0
+    next_term = 1  
+    while curr_term <= MAX_TERM_VALUE:
+        print(curr_term)
+        term_after_next = curr_term + next_term
+        curr_term = next_term
+        next_term = term_after_next
+if __name__ == '__main__':
+    main()
