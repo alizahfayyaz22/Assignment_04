@@ -1,0 +1,114 @@
+# GOOGLE COLLAB LINK:https://colab.research.google.com/drive/1rStInO3a1dGmfeZNVZd7jN32BBqp3QLT?usp=sharing
+# control flow
+
+import random
+
+score: int = 0
+
+def main():
+    global score  
+    for i in range(5):
+        print(f"round", i + 1)
+        computer_num = random.randint(1, 99)
+        user_num = random.randint(1, 99)
+        print(f"your number is {user_num}")
+        user_choice = str(input("what do you think? Is your number higher or lower than the computer's number? "))
+        
+        if user_choice == "higher":
+            if user_num > computer_num:
+                print("you won")
+                score += 1
+                print(f"now the score is {score}")
+            else:
+                print("that was wrong")
+
+        if user_choice == "lower":
+            if user_num < computer_num:
+                print("you won")
+                score += 1
+                print(f"now the score is {score}")
+            else:
+                print("that was wrong")
+
+if __name__ == "__main__":
+    main()
+
+    # intro to python
+
+MERCURY_GRAVITY = 0.376
+VENUS_GRAVITY = 0.889
+MARS_GRAVITY = 0.378
+JUPITER_GRAVITY = 2.36
+SATURN_GRAVITY = 1.081
+URANUS_GRAVITY = 0.815
+NEPTUNE_GRAVITY = 1.14
+EARTH_GRAVITY = 1.0
+
+def main():
+    planet = input("Enter a planet: ").capitalize() 
+    earth_weight = float(input("Enter a weight on Earth: "))
+
+    if planet == "Mercury":
+        gravity_constant = MERCURY_GRAVITY
+    elif planet == "Venus":
+        gravity_constant = VENUS_GRAVITY
+    elif planet == "Mars":
+        gravity_constant = MARS_GRAVITY
+    elif planet == "Jupiter":
+        gravity_constant = JUPITER_GRAVITY
+    elif planet == "Saturn":
+        gravity_constant = SATURN_GRAVITY
+    elif planet == "Uranus":
+        gravity_constant = URANUS_GRAVITY
+    elif planet == "Neptune":
+        gravity_constant = NEPTUNE_GRAVITY
+    else:
+        print("Invalid planet name.")
+        return
+
+  
+    print(f"The gravity constant on {planet} is {gravity_constant}")
+
+    planetary_weight = earth_weight * gravity_constant
+    rounded_planetary_weight = round(planetary_weight, 2)
+
+    print("The equivalent weight on " + planet + ": " + str(rounded_planetary_weight))
+
+
+if __name__ == "__main__":
+    main()
+
+#  list and dictionaries
+# try and except are used for better working here 
+def access(lst,index):
+  try:
+    return lst[index]
+  except:
+    return "index out of range"  
+def modify(lst,index,value):
+  try:
+     lst[index]=value
+     return lst
+  except:
+      return "out of range"
+def slicing(lst,start,end):
+  try: 
+    lst[start:end]
+  except:
+      return "invalid indices"    
+def index_game():
+  choice=input(print("which operation you want to perform modify , slicing, accessing?"))
+  lst:list= [2,4,6,8,10]
+  if choice== "accessing":
+    index=int(input("enter the index: "))
+    print(access(lst,index))
+  elif choice=="modify":
+    index=int(input("enter the index: "))
+    value=int(input("enter the value: "))
+    print(modify(lst,index,value))
+  elif choice=="slicing":
+    start=int(input("enter the start index: "))
+    end=int(input("enter the end index: "))
+    print(slicing(lst,start,end))
+index_game()
+
