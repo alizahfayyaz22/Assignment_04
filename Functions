@@ -1,0 +1,166 @@
+# average
+def average(a: float, b: float):
+    sum = a + b
+    return sum / 2
+
+def main():
+    avg_1 = average(0, 19)
+    avg_2 = average(8, 17)
+    
+    final = average(avg_1, avg_2)
+    print("avg_1", avg_1)
+    print("avg_2", avg_2)
+    print("final", final)
+if __name__ == '__main__':
+    main()
+
+# chaotic_counting
+def chaotic_counting():
+    for i in range(10):
+        curr_num = i + 1
+        if done():
+            return
+        print(curr_num)
+
+def done():
+    if random.random() < DONE_LIKELIHOOD:
+        return True
+    return False
+
+def main():
+    print("I'm going to count until 10 or until I feel like stopping, whichever comes first.")
+    chaotic_counting()
+    print("I'm done")
+if __name__ == "__main__":
+    main()
+# even numbers
+
+def count_even(lst):
+    """
+    Returns number of even numbers in list.
+    >>> count_even([1,2,3,4])
+    2
+    >>> count_even([1,3,5,7])
+    0
+    """
+    count = 0  
+    for num in lst:  # Loop through the numbers in the list
+        if num % 2 == 0:  # If the current number in the list is even (divisible by 2)
+            count += 1  # Add one to our count!
+    print(count) 
+
+def get_list_of_ints():
+    lst = []  # Make an empty list to store integers
+    user_input = input("Enter an integer or press enter to stop: ")  
+    while user_input != "":  
+        lst.append(int(user_input)) 
+        user_input = input("Enter an integer or press enter to stop: ") 
+
+    return lst
+def main():
+    lst = get_list_of_ints()
+    count_even(lst)
+if __name__ == '__main__':
+    main()
+
+# doble the number: 
+def double(num: int):
+    return num * 2
+def main():
+    num = int(input("Enter a number: "))
+    num_times_2 = double(num)
+    print("Double that is", num_times_2)
+
+if __name__ == '__main__':
+    main()
+# get name
+def get_name():
+    return "Ali"
+def main():
+    name = get_name() # get_name() will return a string which we store to the 'name' variable here
+    print("Howdy", name, "! 🤠")
+
+if __name__ == '__main__':
+    main()
+
+# odd or even
+def main():
+    for i in range(10):
+        if is_odd(i):
+            print('odd')
+        else:
+            print('even')
+def is_odd(value: int):
+    remainder = value % 2  # 0 if value is divisible by 2, 1 if it isn't
+    return remainder == 1
+
+if __name__ == '__main__':
+    main()
+
+# print divisor
+def print_divisors(num: int):
+    print("Here are the divisors of", num)
+    for i in range(num):
+        curr_divisor = i + 1
+        if num % curr_divisor == 0:
+            print(curr_divisor)
+
+def main():
+    num = int(input("Enter a number: "))
+    print_divisors(num)
+
+if __name__ == '__main__':
+    main()
+
+# sentence generator
+def make_sentence(word, part_of_speech):
+    if part_of_speech == 0:
+
+        print("I am excited to add this " + word + " to my vast collection of them!")
+    elif part_of_speech == 1:
+       
+        print("It's so nice outside today it makes me want to " + word + "!")
+    elif part_of_speech == 2:
+    
+        print("Looking out my window, the sky is big and " + word + "!")
+    else:
+         print("Part of speech must be 0, 1, or 2! Can't make a sentence.")
+
+
+def main():
+    word :  str = input("Please type a noun, verb, or adjective: ")
+    print("Is this a noun, verb, or adjective?")
+    part_of_speech = int(input("Type 0 for noun, 1 for verb, 2 for adjective: "))
+    make_sentence(word, part_of_speech)
+
+if __name__ == '__main__':
+    main()
+
+# ones digit
+def print_ones_digit(num):
+    ones_digit = num % 10
+    print("The ones digit is", ones_digit)
+
+def main():
+    num = int(input("Enter a number: "))
+    print_ones_digit(num)
+
+if __name__ == '__main__':
+    main()
+
+
+# repeated code 
+def print_multiple(message, repeats):
+    for _ in range(repeats):
+        print(message)
+
+def main():
+    message = input("Please type a message: ")
+    repeats = int(input("Enter a number of times to repeat your message: "))
+    print_multiple(message, repeats)
+if __name__ == '__main__':
+    main()
+
+
+
+
